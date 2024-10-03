@@ -1,0 +1,67 @@
+@import url("https://chinese-fonts-cdn.deno.dev/packages/syst/dist/SourceHanSerifCN/result.css");
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("./assets/fonts/JetBrainsMono-Regular.woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', 'Source Han Serif CN VF', -apple-system, BlinkMacSystemFont, "pingfang SC",
+    "Hiragina Sans GB", "Helvetica Neue", Helvetica, "microsoft yahei ui",
+    "microsoft yahei", simsun, arial, sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.v-enter-active,
+.v-leave-active {
+    transition: all 0.3s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translate(-20px);
+    opacity: 0;
+    filter: blur(.5rem);
+}
+
+.animate_duration_fast {
+    animation-duration: .4s;
+}
+
+body {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.gradient {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.dark body {
+    background: #18181b;
+}
+
+.dark .gradient {
+    background: #18181b;
+}
+
+.dark * {
+    color: #EEE;
+}
