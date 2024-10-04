@@ -6,6 +6,7 @@ import {
   IconMoonFill,
   IconDesktop,
 } from "@arco-design/web-vue/es/icon";
+import Footers from "./footers.vue";
 import { useSetsStore } from "../store";
 
 const setsStore = useSetsStore();
@@ -89,6 +90,7 @@ const toggleTheme = () => {
         </div>
       </div>
     </transition>
+    <footers />
   </div>
 </template>
 
